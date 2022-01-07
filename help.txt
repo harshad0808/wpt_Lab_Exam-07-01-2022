@@ -1,0 +1,49 @@
+
+
+
+-----for front end requirements
+import { useEffect,useState } from "react";
+import  Axios  from "axios";
+
+
+-----for backend
+
+const Promise = require("bluebird");
+Promise.promisifyAll(require("mysql/lib/Connection").prototype);
+
+mysql
+nodemon
+express
+axios
+cors
+bluebird
+
+
+---sql connection----
+const conninfo=
+{
+    host: "localhost",
+    user: "root",
+    password: "cdac",
+    database: "",
+}
+
+---express 
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
+
+---bootstrap
+npm install react-bootstrap bootstrap@5.1.3
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
